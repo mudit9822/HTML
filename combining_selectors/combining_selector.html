@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Combining Selector </title>
+<style>
+h1.title{
+    color: teal;
+    text-align: center;
+}
+h3.details{
+    color: blueviolet;
+}
+</style>
+</head>
+<body>
+    <h1 class="title"> MY BIO DATA </h1>
+    <h3 class="details"> Personal Details </h3>
+    <div>
+        <ol>
+            <li> My name is Mudit Mehta </li>
+            <li> My granny's name is Madanbai Mehta </li>
+            <li> My father's name is Sunil Mehta </li>
+            <li> My mother's name is Asha Mehta </li>
+            <li> My sister's name is Jigisha Mehta </li>
+        </ol>
+    </div>
+    <h3 class="details"> Education Details </h3>
+    <div>
+        <ol>
+            <li> I completed my graduation in Mechanical Enginnering from IIT Goa in 2021 </li>
+            <li> My overall CGPA was 8.69 </li>
+            <li> I received honours degree in Mechanical Engineering </li>
+            <li> There were 24 students in my batch with 24 boys and 0 girls </li>
+            <li> My favourite subject in college was Fluid Mechanics </li>
+        </ol>
+    </div>
+</body>
+</html>
+
+<!-- Element with class selectors 
+-----------------------------------------------------------------------------------
+#every p that has class = big
+p.big{
+    font-size: 20px;
+}
+
+e.g.
+<p class="big"> ... </p>        => affected
+<div class="big"> ... </div>    => not affected
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+#child selector
+article > p{                    => every p that is a direct child of article
+    color: blue;
+}
+
+e.g.
+<article>
+    <p>                         => will get blue text
+    </p>
+</article>
+
+<p> </p>
+<article> 
+    <div> 
+        <p> </p>                => will remain unaffected as there is an extra div element
+    </div>
+</article>
+-----------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------
+#Descendent Selector
+article p{
+    color: blue;                => every p that is inside (at any level) of article
+}
+-----------------------------------------------------------------------------------
+
+
+-->
