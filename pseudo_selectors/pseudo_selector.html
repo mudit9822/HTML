@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo_selector</title>
+<style>
+     header li{
+        list-style: none;
+    }
+    a:link, a:visited{
+        text-decoration: none;
+        background-color: teal;
+        border: 1px;
+        color: white;
+        display: grid;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    a:hover, a:active{
+        background-color: red;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <!-- 
+        selector:seudo-class{...}
+        There are many pseudo class selector that exists.
+        We will cover 
+        :link
+        :visited
+        :hover
+        :active
+        :nth-child(..)
+     -->
+
+     <h1> PSEUDO CLASS SELECTORS </h1>
+     <header>
+        <ul>
+            <li> <a href="/"> Home </a> </li>
+            <li> <a href="https://www.google.co.in/"> Google </a> </li>
+            <li> <a href="https://www.sprinklr.com/"> Sprinklr! Click to know more </a> </li>
+        </ul>
+        <div> This is a div tag </div>
+        <span> This is a span tag </span>
+     </header>
+</body>
+</html>
